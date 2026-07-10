@@ -19,48 +19,6 @@ turn (defense) — that separate the correct line from the greedy-instinct trap.
 
 ---
 
-## Rules primer (what the trees assume)
-
-- **You win at 8 points.** Points come from **battlefields**:
-  - **Conquer** — end an attacking **showdown** with a unit at a battlefield you
-    didn't already control → **1 point immediately** (when the showdown resolves).
-  - **Hold** — start your turn still controlling a battlefield → **1 point**.
-  - Each battlefield scores **once per turn**. You **cannot take your final winning
-    point by a lone conquer** while a battlefield sits empty — the last point must
-    come from a **Hold**, or from conquering **every** battlefield that turn.
-- A **showdown** is the combat where units fight over a location. **[Reaction]**
-  spells resolve at instant speed as priority (**Focus**) passes back and forth, so
-  whoever commits *last* has the information edge.
-- **Two resources, and they behave differently.** **Energy** renews each turn.
-  **Power** comes from **runes** and is spent by exhausting/recycling them; a rune
-  pool **empties every turn** — unspent Power is lost, and a recycled rune is gone
-  from your pool for a while. (In card costs, a rune/"pip" is shown here as a Power
-  cost, e.g. *"3E + 1 pip"* = 3 Energy plus one rune.)
-- There is **no face damage and no deck-out kill** in Riftbound. "Burn out" (drawing
-  from an empty deck) reshuffles your trash and hands the **opponent** a point — so
-  every deck here wins on **battlefield points only.**
-
-### How you actually "deny a Conquer"
-
-Combat isn't a Might-total comparison — each side deals damage equal to its summed
-Might, assigned **lethal-to-one-unit-before-the-next**. The opponent Conquers only if,
-after damage, **they** have a unit at the battlefield and **you** have none. So defense
-= **keep at least one unit alive there**: add a body (Ambush/Hidden token), buff one
-over the lethal it will eat, or **shrink / bounce / kill** attackers to cut the damage
-they can assign. **One survivor = no Conquer.**
-
-### The two defensive windows (on the opponent's turn)
-
-| Window | When | What you may play |
-|---|---|---|
-| **Closed State** | The opponent casts a spell/ability (a **chain** exists) | **[Reaction]** cards only — they resolve **before** the thing on the chain (LIFO). **Counters** (Defy, Hard Bargain) live here: a counter needs an opposing spell/ability already on the chain. |
-| **Showdown State** | The opponent **attacked** a battlefield you contest | **[Action]** or **[Reaction]** cards, once you gain **Focus** (the attacker gets Focus first, then you). Combat tricks, **[Hidden]** flips, and **[Ambush]** blockers fire here. |
-
-In **Neutral Open** (the opponent's main phase, no chain, no showdown) **only the turn
-player acts** — you **cannot** react to a bare unit being played; it resolves
-immediately. And **gear activated abilities are main-phase-only** — they can't be used
-to defend in a showdown.
-
 ## How to read the decision trees
 
 ```mermaid
